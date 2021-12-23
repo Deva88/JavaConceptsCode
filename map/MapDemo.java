@@ -1,35 +1,33 @@
 package com.map;
-
 import java.util.Map;
 import java.util.HashMap;
 
 class MapDemo {
+	public static void main(String[] args) {
+		// Creating a map using the HashMap
+		Map<String, Integer> numbers = new HashMap<>();
 
-    public static void main(String[] args) {
-        // Creating a map using the HashMap
-        Map<String, Integer> numbers = new HashMap<>();
+		// Insert elements to the map
+		numbers.put("One", 1);
+		numbers.put("Two", 2);
+		System.out.println("Map: " + numbers);
 
-        // Insert elements to the map
-        numbers.put("One", 1);
-        numbers.put("Two", 2);
-        System.out.println("Map: " + numbers);
+		// Access keys of the map
+		System.out.println("Keys: " + numbers.keySet());
 
-        // Access keys of the map
-        System.out.println("Keys: " + numbers.keySet());
+		// Access values of the map
+		System.out.println("Values: " + numbers.values());
 
-        // Access values of the map
-        System.out.println("Values: " + numbers.values());
+		// Access entries of the map
+		System.out.println("Entries: " + numbers.entrySet());
 
-        // Access entries of the map
-        System.out.println("Entries: " + numbers.entrySet());
+		// Remove Elements from the map
+		int value = numbers.remove("Two");
+		System.out.println("Removed Value: " + value);
 
-        // Remove Elements from the map
-        int value = numbers.remove("Two");
-        System.out.println("Removed Value: " + value);
-        
-     // Replacing the values
-        numbers.replace("One", 11);
-        numbers.replace("Two", 22);
-        System.out.println("New Map: " + numbers);
-    }
+		// Replacing the values
+		numbers.replace("One", 11);
+		numbers.replace("Two", 22);
+		System.out.println("New Map: " + numbers);
+	}
 }
