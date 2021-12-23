@@ -1,6 +1,5 @@
 package com.exceptionhanndling;
 import java.util.*;
-
 class LowbalanceException extends Exception
 {
 	public LowbalanceException()
